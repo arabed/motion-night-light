@@ -10,13 +10,15 @@
 #define gpioD1LedOut  15
 #define gpioD2LedOut  14
 #define gpioD3LedOut  16
-#define gpioMotionIn   8
+#define gpioMotionIn   9
 #define gpioPhotoIn   19
 
 #define SERIAL_OUT_ENABLED
 
 int cnt = 0;
 int photoAvrg = 0;
+int led[] = {0,0,0};
+int ledCnt = 0;
 
 void setup() {
   pinMode(LED_BUILTIN_TX,INPUT);
@@ -49,19 +51,27 @@ void loop() {
   Serial.println(photo);
   #endif
 
+  if( ledCnt >= 3 )
+  {
+    ledCnt = 0;
+  }
   if( photoAvrg <= 10 && motion == 1 )
   {
-    digitalWrite(gpioD1LedOut, 1);
-    digitalWrite(gpioD2LedOut, 1);
-    digitalWrite(gpioD3LedOut, 1);
+    led[ledCnt] = 1;
   }
   else
   {
-    digitalWrite(gpioD1LedOut, 0);
-    digitalWrite(gpioD2LedOut, 0);
-    digitalWrite(gpioD3LedOut, 0);
+    led[ledCnt] = 0;
   }
-  
-  delay(500);
+  if( cnt % 10 == 0 )
+  {
+    ledCnt++;
+  }
+
+  digitalWrite(gpioD1LedOut, led[0]);
+  digitalWrite(gpioD2LedOut, led[1]);
+  digitalWrite(gpioD3LedOut, led[2]);
+
+  delay(100);
 }
 
