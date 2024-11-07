@@ -41,3 +41,8 @@ I designed a simple enclosure for this project.
 
 You can find the STL files for [front cover here](https://github.com/arabed/motion-night-light/blob/main/docs/Motion%20Night%20Light%20v19.stl) and [back cover here](https://github.com/arabed/motion-night-light/blob/main/docs/Motion%20Night%20Light%20-%20cover%20v5.stl).
 
+## Reference
+
+The Pro Micro pinout for reference:
+
+![](https://github.com/arabed/motion-night-light/blob/main/docs/Pro-Micro-Pin-Out.png)
