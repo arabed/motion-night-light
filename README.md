@@ -27,8 +27,17 @@ stateDiagram-v2
 
 The following diagram is illustrated the electronic componets and the related wiring.
 
-Fell free to chnage the analog or digital ports as you like. Just remember to modify the code th mach your changes.
+Fell free to change the analog or digital ports as you like. Just remember to modify the code th mach your changes.
+
+![](https://github.com/arabed/motion-night-light/blob/main/docs/circuit-diagram.png)
+
+[draw.io source file here](https://github.com/arabed/motion-night-light/blob/main/docs/circuit-diagram.drawio)
 
 ## enclosure
 
-I designed a simple enclosure for this project here. Please feel free to use it as you like.
+I designed a simple enclosure for this project.
+
+![](https://github.com/arabed/motion-night-light/blob/main/docs/Motion%20Night%20Light%20v19.png)
+
+You can find the STL files for [front cover here](https://github.com/arabed/motion-night-light/blob/main/docs/Motion%20Night%20Light%20v19.stl) and [back cover here](https://github.com/arabed/motion-night-light/blob/main/docs/Motion%20Night%20Light%20-%20cover%20v5.stl).
+
