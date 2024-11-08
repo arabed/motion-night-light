@@ -1,6 +1,10 @@
-# motion-night-light
+# Motion Night Light
 
 This is a simple motion detect-triggered night light using arduino compatible micro module.
+
+![](https://github.com/arabed/motion-night-light/blob/main/docs/product.png)
+
+## State Machine
 
 The following is  the state machine of this device.
 
