@@ -1,6 +1,8 @@
 # Motion Night Light
 
-This is a simple motion detect-triggered night light using arduino compatible micro module.
+A compact Arduino‑based night light that activates only when motion is detected, designed for simple assembly and everyday use.
+
+A minimal, reliable motion‑triggered night light built around a small Arduino‑compatible module, featuring a clear state machine and easy‑to‑modify circuitry
 
 ![](https://github.com/arabed/motion-night-light/blob/main/docs/product.png)
 
